@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @apply bg-gradient-to-br from-black via-gray-900 to-gray-950 min-h-screen text-gray-100 p-10;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+} */
+
+/* ul,
+ol {
+  margin: 0;
+  padding: 0;
+} */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+} */
+
+@layer utilities {
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl p-6 shadow-xl;
+  }
+
+  .neon-input {
+    @apply w-full p-3 rounded-xl bg-black/40 border border-gray-700 transition;
+  }
+
+  .neon-button {
+    @apply px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 active:bg-purple-800 transition w-full cursor-pointer;
+  }
+  /* .gradient-bg {
+    @apply bg-gradient-to-br from-black via-gray-900 to-gray-950 min-h-screen text-gray-100 p-10;
+  } */
+}
